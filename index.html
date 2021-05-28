@@ -1,0 +1,332 @@
+<head>
+	<link rel="image_src" href="flaticon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+	<title>Crypto Pulse</title>
+	<link rel="icon" type="image/png" href="src/flaticon.png" />
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JN4Q50MQSK">
+
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+    gtag('config', 'G-JN4Q50MQSK');
+	</script>
+	<script src="script.js">
+
+	</script>
+
+	<style>
+		body {
+			background-image: linear-gradient(89deg, #FFFFFF 0%, #E7F4FF 100%);
+			width: 80%;
+			margin-top: 100px;
+			margin: 0px auto 0px auto;
+		}
+
+		img {
+			padding-bottom: 10px;
+		}
+
+		.card {
+			color: #25292F;
+			font-size: 35px;
+			font-family: Arial;
+			font-weight: bolder;
+			width: 50%;
+			margin: 25px auto auto auto;
+
+		}
+
+		.footer {
+			font-family: Helvetica;
+			font-weight: bolder;
+			text-align: center;
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+		}
+
+		.center {
+			margin: 25px auto auto auto;
+			width: 50%;
+			padding: 50px;
+			border-radius: 25px;
+			background: white;
+			/* fallback for old browsers */
+			text-align: center;
+			-moz-box-shadow: inset 0 0 10px #000000;
+			-webkit-box-shadow: inset 0 0 10px #000000;
+			box-shadow: inset 0 0 8px #000000;
+
+		}
+
+		.center1 {
+			margin: 0px auto;
+			width: 90%;
+			border-radius: 25px;
+		}
+
+		@media (max-width:1000px) {
+			.center {
+				width: 70%;
+				border-radius: 30px;
+			}
+
+			.card {
+				width: 70%;
+				font-size: 4rem !important;
+			}
+
+			body {
+				width: 100%;
+			}
+		}
+
+
+
+		a {
+			text-decoration: none;
+			color: #252A2F;
+		}
+
+		.nav {
+			text-align: center;
+			text-decoration: none !important;
+			display: flex;
+			color: #252A2F !important;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+
+		}
+
+		.nav a {
+			font-weight: bolder;
+			font-family: -apple-system, BlinkMacSystemFont, SFRounded;
+			font-size: 30px;
+			color: #252A2F;
+		}
+
+		.nav a:hover {
+			animation-name: hover;
+			animation-duration: 0.5s;
+			font-size: 31px;
+			color: #FF7D0C;
+		}
+
+		@keyframes hover {
+			0% {
+				font-size: 30px;
+				color: black;
+			}
+			100% {
+				font-size: 30.5px;
+				color: #FF7D0C
+			}
+		}
+
+		.whitepaper {
+			background-color: white;
+			height: 50rem;
+		}
+
+		.pushable {
+			background: hsla(33, 93%, 35%, 1);
+			border-radius: 12px;
+			border: none;
+			padding: 0;
+			cursor: pointer;
+			outline-offset: 4px;
+		}
+
+		.front {
+			display: block;
+			padding: 12px 42px;
+			border-radius: 12px;
+			font-size: 1.25rem;
+			background: hsla(33, 93%, 53%, 1);
+			color: white;
+			transform: translateY(-6px);
+		}
+
+		.pushable:active .front {
+			transform: translateY(-2px);
+		}
+
+    @media (prefers-color-scheme: dark) {
+  body {
+    	background-image: linear-gradient(89deg, #0D0F1D 0%, #0D0F1D 100%);
+
+  }
+
+  body a {
+    color: #E7E7E7 !important;
+  }
+
+
+    		.center {
+			background: #E7E7E7;
+			/* fallback for old browsers */
+			text-align: center;
+			-moz-box-shadow: inset 0 0 10px #000000;
+			-webkit-box-shadow: inset 0 0 10px #000000;
+			box-shadow: inset 0 0 12px #000000;
+
+		}
+}
+
+	</style>
+</head>
+
+<body>
+
+	<div class="nav">
+    <a href="whitepaper.html">whitepaper</a>
+
+	</div>
+	<div class="buttons">
+		<button style="position:relative; margin: 10px auto;"class="pushable" onClick="myFunction()">
+  <span class="front">
+    ETH
+  </span>
+</button> 
+<button style="position:relative; margin: 10px auto;"class="pushable" onClick="myFunction1()">
+  <span class="front">
+    BTC
+  </span>
+</button> 
+</div>
+   <div class="card">
+       <div class="center"id="btc"><img src="src/btc.png" alt="btc image"> <div class="btc"></div><div style="font-size:30px;"class="cap"></div></div>
+       <div class="center" id="eth"><img src="src/eth.png" alt="eth image"> <div class="eth"></div><div style="font-size:30px;"class="flip"></div>
+</div>
+
+       <div class="center" id="bnb"><img src="src/bnb.png" alt="bnb image"> <div class="bnb"></div></div>
+       <div class="center" id="ada"><img src="src/ada.png" alt="ada image"> <div class="ada"></div></div>
+       <div class="center" id="doge"><img src="src/doge.png" alt="doge image"> <div class="doge"></div></div>
+       <div class="center" id="matic"><img src="src/matic.png" alt="matic image"> <div class="matic"></div></div>
+       <div class="center" id="dot"><img src="src/dot.png" alt="dot image"> <div class="dot"></div></div>
+       <div class="center" id="xrp"><img src="src/xrp.png" alt="xrp image"> <div class="xrp"></div></div>
+       <div class="center" id="uni"><img src="src/uni.png" alt="uni image"> <div class="uni"></div></div>
+       <div class="center" id="link"><img src="src/link.png" alt="link image"> <div class="link"></div></div>
+       <div class="center" id="sol"><img src="src/sol.png" alt="sol image"> <div class="sol"></div></div>
+       <div class="center" id="ftt"><img src="src/ftt.png" alt="ftt image"> <div class="ftt"></div></div>
+       
+
+    </div>
+    <script>
+    $.getJSON('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,BNB,ADA,DOGE,MATIC,DOT,XRP,UNI,LINK,SOL,FTT&tsyms=USD&api_key=&api_key=3e4d8cb70681806715430c9bc63b1c86664cbc35e07c78e90ffb1dcdb5bd080f', function(data) {
+        var bprice = `${data.BTC.USD}`
+        var eprice = `${data.ETH.USD}`
+        var btc = `BTC: ${data.BTC.USD}<br>`
+        var eth = `ETH: ${data.ETH.USD}<br>`
+        var bnb = `BNB: ${data.BNB.USD}<br>`
+        var ada = `ADA: ${data.ADA.USD}<br>`
+        var doge = `DOGE: ${data.DOGE.USD}<br>`
+        var matic = `MATIC: ${data.MATIC.USD}<br>`
+        var dot = `DOT: ${data.DOT.USD}<br>`
+        var xrp = `XRP: ${data.XRP.USD}<br>`
+        var uni = `UNI: ${data.UNI.USD}<br>`
+        var link = `LINK: ${data.LINK.USD}<br>`
+        var sol = `SOL: ${data.SOL.USD}<br>`
+        var ftt = `FTT: ${data.FTT.USD}<br>`
+        function bFormatter(num) {
+    return Math.abs(num) > 999999999 ? '$' + Math.sign(num)*((Math.abs(num)/1000000000).toFixed(1)) + 'B' : Math.sign(num)*Math.abs(num)
+}
+
+
+
+        $(".btc").html(btc);
+        $(".eth").html(eth);
+        $(".bnb").html(bnb);
+        $(".ada").html(ada);
+        $(".doge").html(doge);
+        $(".matic").html(matic);
+        $(".dot").html(dot);
+        $(".xrp").html(xrp);
+        $(".uni").html(uni);
+        $(".link").html(link);
+        $(".sol").html(sol);
+        $(".ftt").html(ftt);
+
+        var cap = Math.round(18719662*bprice)
+        var flip = Math.round((eprice/(bprice/6.19848955))*100,2)
+        $(".flip").html(flip+'/100 - FLIP');
+        $(".cap").html(bFormatter(cap));
+
+
+    });
+
+    function myFunction() {
+  var x = document.getElementById("btc");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    var x = document.getElementById("ada");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    var x = document.getElementById("doge");
+  if (x.style.display === "none") {
+    ;
+  } else {
+    x.style.display = "none";
+  }
+   var x = document.getElementById("xrp");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+    var x = document.getElementById("sol");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("ftt");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+   var x = document.getElementById("dot");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+    function myFunction1() {
+   document.getElementById('eth').style.display = 'none';
+  document.getElementById('ada').style.display = 'none';
+  document.getElementById('doge').style.display = 'none';
+  document.getElementById('bnb').style.display = 'none';
+  document.getElementById('matic').style.display = 'none';
+  document.getElementById('dot').style.display = 'none';
+  document.getElementById('uni').style.display = 'none';
+  document.getElementById('sol').style.display = 'none';
+  document.getElementById('link').style.display = 'none';
+  document.getElementById('ftt').style.display = 'none';
+  document.getElementById('xrp').style.display = 'none';
+}
+
+</script>
+<footer>  
+  <h1 class ="footer">Made by <a href="https://twitter.com/sharvenium">Sharvesh.eth</a></h1>
+</footer>
+
+</body>
+</html>
